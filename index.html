@@ -1,131 +1,167 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>REAPER Accesible Español Oficial</title>
-</head>
+    <style>
+        /* Estilos básicos para la estructura visual acordada */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        /* Enlace de salto oculto visualmente, pero accesible con teclado */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            text-decoration: none;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
 
+        /* Cabecera centrada */
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        header img {
+            display: block;
+            margin: 0 auto 15px auto;
+        }
+        
+        /* Buscador */
+        .search-container {
+            margin: 15px 0;
+        }
+
+        /* Menú de navegación centrado */
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Columna de contenido principal */
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        
+        /* Estilos para las publicaciones recientes */
+        article {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        article h3 {
+            margin-bottom: 5px;
+        }
+        article a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        article a:hover {
+            text-decoration: underline;
+        }
+
+        /* Pie de página centrado */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-top: 1px solid #ddd;
+            margin-top: 40px;
+        }
+    </style>
+</head>
 <body>
 
-<header>
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
 
-    <h1>REAPER Accesible Español Oficial</h1>
+    <header>
+        <img src="imagenes/Imagen-Reaper-Accesible-Espanol-Oficial.png" alt="Logotipo de REAPER Accesible Español Oficial" width="200" height="auto">
+        
+        <h1>REAPER Accesible Español Oficial</h1>
 
-    <p>
-        Donde la tecnología y la accesibilidad se encuentran.
-    </p>
+        <div class="search-container" role="search">
+            <form action="#" method="get">
+                <label for="buscador">Buscar en el sitio:</label>
+                <input type="search" id="buscador" name="q" placeholder">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </header>
 
-</header>
+    <nav aria-label="Navegación principal">
+        <ul>
+            <li><a href="index.html" aria-current="page">Inicio</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="instructores.html">Nuestros instructores</a></li>
+            <li><a href="redes.html">Redes sociales</a></li>
+            <li><a href="herramientas.html">Herramientas accesibles</a></li>
+            <li><a href="descargas.html">Descarga de REAPER y sus complementos de accesibilidad</a></li>
+            <li><a href="nosotros.html">Acerca de nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
 
+    <main id="contenido-principal">
 
-<main>
+        <section>
+            <h2>Publicaciones Recientes</h2>
+            
+            <article>
+                <h3><a href="#">Título de tu primera publicación</a></h3>
+                <p>Aquí irá un breve resumen o extracto de tu publicación más reciente. Puedes hablar sobre una nueva herramienta, un nuevo curso o una actualización de REAPER.</p>
+            </article>
 
-<section>
+            <article>
+                <h3><a href="#">Título de tu segunda publicación</a></h3>
+                <p>Resumen de la segunda publicación. Con este formato de lista, los lectores de pantalla podrán navegar de encabezado en encabezado fácilmente con la tecla 3.</p>
+            </article>
 
-    <h2>Bienvenidos al sitio oficial de la Comunidad de REAPER Accesible Español Oficial</h2>
+            <article>
+                <h3><a href="#">Título de tu tercera publicación</a></h3>
+                <p>Resumen de la tercera publicación. Más adelante podrás ir agregando o quitando estos bloques conforme vayas creando tu contenido real.</p>
+            </article>
 
-    <p>
-        REAPER Accesible Español Oficial es un proyecto dedicado a promover el uso de REAPER y las herramientas de producción de audio desde una perspectiva totalmente accesible.
-    </p>
+        </section>
 
-    <p>
-        Nuestro objetivo es brindar cursos, herramientas, programas, tutoriales y conocimientos para que más personas puedan desarrollar sus habilidades en edición, grabación, producción musical y creación de contenido digital.
-    </p>
+    </main>
 
-</section>
-
-
-<section>
-
-    <h2>Nuestro origen</h2>
-
-    <p>
-        El proyecto nació en el año 2020, con la intención de crear un espacio donde la accesibilidad fuera una prioridad y donde las personas con discapacidad visual pudieran encontrar información clara, práctica y adaptada sobre el mundo de la producción de audio.
-    </p>
-
-    <p>
-        Desde nuestros inicios hemos trabajado para demostrar que la tecnología puede abrir nuevas oportunidades cuando se desarrolla pensando en todas las personas.
-    </p>
-
-</section>
-
-
-<section>
-
-    <h2>Nuestro compromiso con la accesibilidad</h2>
-
-    <p>
-        En REAPER Accesible Español Oficial estamos comprometidos con la creación de contenidos que eliminen barreras y faciliten el acceso al aprendizaje tecnológico.
-    </p>
-
-    <p>
-        Promovemos el uso de herramientas accesibles, compartimos conocimientos y buscamos fortalecer una comunidad donde cada persona pueda participar, aprender y crear sin limitaciones.
-    </p>
-
-</section>
-
-
-<section>
-
-    <h2>¿Qué encontrarás en este sitio?</h2>
-
-    <ul>
-
-        <li>
-            Tutoriales de REAPER y producción de audio.
-        </li>
-
-        <li>
-            Recursos para usuarios de lectores de pantalla.
-        </li>
-
-        <li>
-            Información sobre accesibilidad digital.
-        </li>
-
-        <li>
-            Material educativo para creación de contenidos.
-        </li>
-
-        <li>
-            Proyectos y herramientas desarrolladas para la comunidad.
-        </li>
-
-    </ul>
-
-</section>
-
-
-<section>
-
-    <h2>Una comunidad que sigue creciendo</h2>
-
-    <p>
-        Continuamos trabajando para construir un espacio donde la accesibilidad, la educación y la tecnología estén al alcance de todas las personas.
-    </p>
-
-    <p>
-        Gracias por formar parte de REAPER Accesible Español Oficial. Juntos seguimos creando un mundo digital más inclusivo.
-    </p>
-
-</section>
-
-
-</main>
-
-
-<footer>
-
-    <p>
-        REAPER Accesible Español Oficial - Proyecto de accesibilidad y educación.
-    </p>
-
-</footer>
-
+    <footer>
+        <p>REAPER-Accesible-Español-Oficial copyright 2020 a 2026</p>
+    </footer>
 
 </body>
-
 </html>
