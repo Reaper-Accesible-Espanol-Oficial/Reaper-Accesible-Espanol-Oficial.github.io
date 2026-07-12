@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REAPER Accesible Español Oficial</title>
+    <title>Acerca de nosotros - REAPER Accesible Español Oficial</title>
     <style>
-        /* Estilos básicos para la estructura visual acordada */
+        /* Estilos básicos idénticos a la página principal para mantener consistencia */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -14,7 +14,6 @@
             color: #333;
         }
         
-        /* Enlace de salto oculto visualmente, pero accesible con teclado */
         .skip-link {
             position: absolute;
             top: -40px;
@@ -29,7 +28,6 @@
             top: 0;
         }
 
-        /* Cabecera centrada */
         header {
             text-align: center;
             padding: 20px;
@@ -40,12 +38,10 @@
             margin: 0 auto 15px auto;
         }
         
-        /* Buscador */
         .search-container {
             margin: 15px 0;
         }
 
-        /* Menú de navegación centrado */
         nav {
             text-align: center;
             background-color: #333;
@@ -69,32 +65,28 @@
             text-decoration: underline;
         }
 
-        /* Columna de contenido principal */
         main {
             max-width: 800px;
             margin: 30px auto;
             padding: 0 20px;
         }
         
-        /* Estilos para las publicaciones recientes */
-        article {
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 15px;
-            margin-bottom: 25px;
+        section {
+            margin-bottom: 30px;
         }
-        article h3 {
-            margin-bottom: 5px;
+        
+        /* Estilos adicionales para resaltar a los fundadores */
+        .fundadores-list {
+            background-color: #f4f4f4;
+            padding: 20px 40px;
+            border-radius: 8px;
+            margin: 20px 0;
         }
-        article a {
-            color: #0056b3;
-            text-decoration: none;
+        .fundadores-list li {
+            margin-bottom: 10px;
             font-weight: bold;
         }
-        article a:hover {
-            text-decoration: underline;
-        }
 
-        /* Pie de página centrado */
         footer {
             text-align: center;
             padding: 20px;
@@ -116,7 +108,7 @@
         <div class="search-container" role="search">
             <form action="#" method="get">
                 <label for="buscador">Buscar en el sitio:</label>
-                <input type="search" id="buscador" name="q" placeholder">
+                <input type="search" id="buscador" name="q" placeholder="Ej. Cursos, REAPER accessibility tools.">
                 <button type="submit">Buscar</button>
             </form>
         </div>
@@ -124,13 +116,13 @@
 
     <nav aria-label="Navegación principal">
         <ul>
-            <li><a href="index.html" aria-current="page">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="cursos.html">Cursos</a></li>
             <li><a href="instructores.html">Nuestros instructores</a></li>
             <li><a href="redes.html">Redes sociales</a></li>
             <li><a href="herramientas.html">Herramientas accesibles</a></li>
             <li><a href="descargas.html">Descarga de REAPER y sus complementos de accesibilidad</a></li>
-            <li><a href="nosotros.html">Acerca de nosotros</a></li>
+            <li><a href="nosotros.html" aria-current="page">Acerca de nosotros</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
@@ -138,13 +130,27 @@
     <main id="contenido-principal">
 
         <section>
-            <h2>Publicaciones Recientes</h2>
-            
-            <article>
-                <h3><a href="#">El canal de Youtube de Reaper accesible español se renueva </a></h3>
-                <p>En Reaper accesible español oficial, nos sentimos comprometidos con la enseñanza desde el año 2020. Por eso hoy les traemos la buena noticia de que todo nuestro contenido será actualizado Gradualmente. Espera pronto las novedades.</p>
-            </article>
+            <h2>Nuestra Historia</h2>
+            <p>REAPER Accesible Español Oficial comenzó como un canal de YouTube en el año 2020, impulsado por una idea clara y necesaria: compartir tutoriales 100% accesibles sobre la estación de trabajo de audio digital (DAW) REAPER. A lo largo de tres años, estuvimos compartiendo contenido ininterrumpidamente, semana tras semana, para satisfacer el deseo de muchas personas con discapacidad visual que querían aprender a manejar y dominar esta herramienta a nivel profesional.</p>
+        </section>
 
+        <section>
+            <h2>Los Pioneros del Proyecto</h2>
+            <p>Este espacio no habría sido posible sin el esfuerzo y la visión de las personas que fundaron el proyecto original. Ellos fueron los primeros en toda la comunidad hispanohablante en crear contenido especializado y estructurado para esta estación de trabajo:</p>
+            
+            <ul class="fundadores-list">
+                <li>José Manuel Fernández</li>
+                <li>Emmanuel Sánchez Garibay</li>
+                <li>Danilo Roa</li>
+                <li>Hugo Alberto Macías</li>
+            </ul>
+
+            <p>Gracias al trabajo pionero de este equipo, hoy en día el canal de REAPER Accesible Español Oficial se ha consolidado como una de las principales y más respetadas fuentes de conocimiento sobre el manejo de esta estación de trabajo.</p>
+        </section>
+
+        <section>
+            <h2>Mirando hacia el futuro</h2>
+            <p>Nos sentimos profundamente orgullosos de nuestro recorrido y del impacto que hemos tenido. Por eso, en la actualidad continuamos impulsando este proyecto con renovada energía. Estamos sumando nuevas ideas, estableciendo nuevos propósitos y fijando metas ambiciosas para poder crecer aún más y llegar a todas aquellas personas que desean transformar su creatividad en producciones de audio sin barreras.</p>
         </section>
 
     </main>
