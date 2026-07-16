@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas Accesibles - REAPER Accesible Español Oficial</title>
+    <style>
+        /* Estilos básicos para la estructura visual acordada */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        /* Enlace de salto oculto visualmente, pero accesible con teclado */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            text-decoration: none;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Cabecera centrada */
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        header img {
+            display: block;
+            margin: 0 auto 15px auto;
+        }
+        
+        /* Buscador */
+        .search-container {
+            margin: 15px 0;
+        }
+
+        /* Menú de navegación centrado */
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Columna de contenido principal */
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Estilos para las tarjetas de herramientas */
+        article {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #0056b3;
+            margin-bottom: 25px;
+        }
+        article h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #0056b3;
+        }
+        
+        /* Estilo para el botón de descarga */
+        .btn-descarga {
+            display: inline-block;
+            background-color: #0056b3;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .btn-descarga:hover {
+            background-color: #004494;
+            text-decoration: none;
+        }
+
+        /* Pie de página centrado */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-top: 1px solid #ddd;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+    <header>
+        <img src="imagenes/Imagen-Reaper-Accesible-Espanol-Oficial.png" alt="Logotipo de REAPER Accesible Español Oficial" width="200" height="auto">
+        
+        <h1>REAPER Accesible Español Oficial</h1>
+
+        <div class="search-container" role="search">
+            <form action="#" method="get">
+                <label for="buscador">Buscar en el sitio:</label>
+                <input type="search" id="buscador" name="q" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </header>
+
+    <nav aria-label="Navegación principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="instructores.html">Nuestros instructores</a></li>
+            <li><a href="redes.html">Redes sociales</a></li>
+            <li><a href="herramientas.html" aria-current="page">Herramientas accesibles</a></li>
+            <li><a href="descargas.html">Descarga de REAPER y sus complementos de accesibilidad</a></li>
+            <li><a href="nosotros.html">Acerca de nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main id="contenido-principal">
+
+        <section>
+            <h2>Nuestras Herramientas Accesibles</h2>
+            <p>En esta sección presentamos diversos programas y utilidades desarrolladas por el equipo de REAPER Accesible Español Oficial. Nuestro objetivo principal con estos desarrollos es facilitar la interacción y hacer que la experiencia de producción sea mucho más sencilla Y directa para todos los usuarios.</p>
+            
+            <article>
+                <h3>REAPER Accessibility Tools</h3>
+                <p><strong>Desarrollador:</strong> Hugo Alberto Macías: Studio HT</p>
+                <p>Esta utilidad es un gestor diseñado específicamente para facilitar la instalación de REAPER. Permite descargar de forma automatizada tanto el instalador principal del programa como todas las extensiones de accesibilidad Y traducción al español, dejando tu entorno de trabajo listo en unos pocos clics.</p>
+                
+                <a href="https://raw.githubusercontent.com/Reaper-Accesible-Espanol-Oficial/Reaper-Accessibility-Tools/main/REAPER%20accessibility%20tools.exe" class="btn-descarga" aria-label="Descargar el ejecutable de REAPER Accessibility Tools">Descargar REAPER Accessibility Tools (.exe)</a>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>REAPER-Accesible-Español-Oficial copyright 2020 a 2026</p>
+    </footer>
+
+</body>
+</html>
