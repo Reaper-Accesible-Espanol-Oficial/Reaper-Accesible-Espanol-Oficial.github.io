@@ -15,35 +15,27 @@ function ejecutarBuscador(event) {
     const diccionario = {
         // Redes Sociales
         'tiktok': 'redes.html',
-        'tik tok': 'redes.html',
         'youtube': 'redes.html',
         'whatsapp': 'redes.html',
-        'redes': 'redes.html',
         'comunidad': 'redes.html',
         'grupo': 'redes.html',
         'canal': 'redes.html',
         
         // Descargas (REAPER y complementos)
         'descargar': 'descargas.html',
-        'descarga': 'descargas.html',
-        'descargas': 'descargas.html',
         'reaper': 'descargas.html',
         'osara': 'descargas.html',
         'sws': 'descargas.html',
         'reapack': 'descargas.html',
         'traduccion': 'descargas.html',
         'traducción': 'descargas.html',
-        'español': 'descargas.html',
-        'Traducción al español': 'descargas.html',
-        'complementos': 'descargas.html',
         
         // Herramientas Accesibles
-        'herramientas': 'herramientas.html',
-        'herramienta': 'herramientas.html',
+        'script': 'herramientas.html',
+        'Script': 'herramientas.html',
         'reaper accessibility tools': 'herramientas.html',
         'accessibility tools': 'herramientas.html',
-        'hugo': 'herramientas.html',
-        'hugo alberto macías': 'herramientas.html',
+        'reaper tools': 'herramientas.html',
         
         // Acerca de nosotros / Instructores
         'nosotros': 'nosotros.html',
