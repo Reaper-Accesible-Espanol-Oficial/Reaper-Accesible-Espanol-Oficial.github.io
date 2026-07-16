@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descarga de REAPER y sus complementos de accesibilidad  - REAPER Accesible Español Oficial</title>
+    <style>
+        /* Estilos básicos para la estructura visual acordada */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        /* Enlace de salto oculto visualmente, pero accesible con teclado */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            text-decoration: none;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Cabecera centrada */
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        header img {
+            display: block;
+            margin: 0 auto 15px auto;
+        }
+        
+        /* Buscador */
+        .search-container {
+            margin: 15px 0;
+        }
+
+        /* Menú de navegación centrado */
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Columna de contenido principal */
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Estilos para las tarjetas de descarga */
+        article {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #0056b3;
+            margin-bottom: 25px;
+        }
+        article h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #0056b3;
+        }
+        
+        /* Estilo para los botones de descarga */
+        .btn-descarga {
+            display: inline-block;
+            background-color: #0056b3;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .btn-descarga:hover {
+            background-color: #004494;
+            text-decoration: none;
+        }
+
+        /* Pie de página centrado */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-top: 1px solid #ddd;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+    <header>
+        <img src="imagenes/Imagen-Reaper-Accesible-Espanol-Oficial.png" alt="Logotipo de REAPER Accesible Español Oficial" width="200" height="auto">
+        
+        <h1>REAPER Accesible Español Oficial</h1>
+
+        <div class="search-container" role="search">
+            <form action="#" method="get">
+                <label for="buscador">Buscar en el sitio:</label>
+                <input type="search" id="buscador" name="q" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </header>
+
+    <nav aria-label="Navegación principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="instructores.html">Nuestros instructores</a></li>
+            <li><a href="redes.html">Redes sociales</a></li>
+            <li><a href="herramientas.html">Herramientas accesibles</a></li>
+            <li><a href="descargas.html" aria-current="page">Descarga de REAPER y sus complementos de accesibilidad</a></li>
+            <li><a href="nosotros.html">Acerca de nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main id="contenido-principal">
+
+        <section>
+            <h2>Descargas Oficiales</h2>
+            <p>Aquí encontrarás los enlaces directos a las páginas oficiales para descargar REAPER y todos los complementos necesarios.</p>
+            
+            <article>
+                <h3>REAPER</h3>
+                <p>La estación de trabajo de audio digital (DAW) principal. Rápido, eficiente y altamente personalizable.</p>
+                <a href="https://www.reaper.fm/download.php" class="btn-descarga" target="_blank" aria-label="Página oficial de REAPER">Descargar REAPER</a>
+            </article>
+
+            <article>
+                <h3>OSARA</h3>
+                <p>Open Source Accessibility for the REAPER Application. Es la extensión fundamental que comunica a REAPER con lectores de pantalla como NVDA, JAWS y VoiceOver.</p>
+                <a href="https://osara.reaperaccessibility.com/" class="btn-descarga" target="_blank" aria-label="Descarga de OSARA">Descargar OSARA</a>
+            </article>
+
+            <article>
+                <h3>SWS Extension</h3>
+                <p>Una extensión indispensable que añade cientos de acciones y funcionalidades nuevas a REAPER, muchas de ellas vitales para los atajos de teclado de accesibilidad.</p>
+                <a href="https://www.sws-extension.org/" class="btn-descarga" target="_blank" aria-label="Página oficial de SWS">Descargar SWS Extension</a>
+            </article>
+
+            <article>
+                <h3>ReaPack</h3>
+                <p>El gestor de paquetes de REAPER. Te permite instalar y actualizar automáticamente miles de scripts y herramientas creadas por la comunidad.</p>
+                <a href="https://reapack.com/" class="btn-descarga" target="_blank" aria-label="Página oficial de ReaPack">Descargar ReaPack</a>
+            </article>
+
+            <article>
+                <h3>Traducción al español (Javier Robledo)</h3>
+                <p>El paquete de idioma completo para tener toda la interfaz, menús y lista de acciones de REAPER en español.</p>
+                <a href="https://stash.reaper.fm/v/32185/REAPER_es_Espa%C3%B1ol_JRP_Full.ReaperLangPac" class="btn-descarga" target="_blank" aria-label="Descargar el paquete en español">Descargar Traducción al Español</a>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>REAPER-Accesible-Español-Oficial copyright 2020 a 2026</p>
+    </footer>
+
+</body>
+</html>
