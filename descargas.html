@@ -126,7 +126,8 @@
         <h1>REAPER Accesible Español Oficial</h1>
 
         <div class="search-container" role="search">
-            <form action="#" method="get">
+            <!-- AQUÍ ESTÁ EL CAMBIO DEL FORMULARIO -->
+            <form onsubmit="ejecutarBuscador(event)">
                 <label for="buscador">Buscar en el sitio:</label>
                 <input type="search" id="buscador" name="q" placeholder="Buscar...">
                 <button type="submit">Buscar</button>
@@ -162,13 +163,13 @@
             <article>
                 <h3>OSARA</h3>
                 <p>Open Source Accessibility for the REAPER Application. Es la extensión fundamental que comunica a REAPER con lectores de pantalla como NVDA, JAWS y VoiceOver.</p>
-                <a href="https://osara.reaperaccessibility.com/snapshots/" aria-label="Descarga de OSARA">Descargar OSARA</a>
+                <a href="https://osara.reaperaccessibility.com/snapshots/" class="btn-descarga" target="_blank" aria-label="Descarga de OSARA">Descargar OSARA</a>
             </article>
 
             <article>
                 <h3>SWS Extension</h3>
                 <p>Una extensión indispensable que añade cientos de acciones y funcionalidades nuevas a REAPER, muchas de ellas vitales para los atajos de teclado de accesibilidad.</p>
-                <a href="https://sws-extension.org/whatsnew.php" aria-label="Página oficial de SWS">Descargar SWS</a>
+                <a href="https://sws-extension.org/whatsnew.php" class="btn-descarga" target="_blank" aria-label="Página oficial de SWS">Descargar SWS</a>
             </article>
 
             <article>
@@ -180,7 +181,7 @@
             <article>
                 <h3>Traducción al español (Javier Robledo)</h3>
                 <p>El paquete de idioma completo para tener toda la interfaz, menús y lista de acciones de REAPER en español.</p>
-                <a href="https://www.reaperespa.com/descargar-reaper-en-espanol/" aria-label="Descargar el paquete en español">Descargar Traducción al Español</a>
+                <a href="https://www.reaperespa.com/descargar-reaper-en-espanol/" class="btn-descarga" target="_blank" aria-label="Descargar el paquete en español">Descargar Traducción al Español</a>
             </article>
 
         </section>
@@ -190,6 +191,9 @@
     <footer>
         <p>REAPER-Accesible-Español-Oficial copyright 2020 a 2026</p>
     </footer>
+
+    <!-- AQUÍ ESTÁ EL ENLACE AL ARCHIVO JAVASCRIPT -->
+    <script src="buscador.js"></script>
 
 </body>
 </html>

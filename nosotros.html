@@ -106,7 +106,8 @@
         <h1>REAPER Accesible Español Oficial</h1>
 
         <div class="search-container" role="search">
-            <form action="#" method="get">
+            <!-- AQUÍ ESTÁ EL CAMBIO DEL FORMULARIO -->
+            <form onsubmit="ejecutarBuscador(event)">
                 <label for="buscador">Buscar en el sitio:</label>
                 <input type="search" id="buscador" name="q" placeholder="Ej. Cursos, REAPER accessibility tools.">
                 <button type="submit">Buscar</button>
@@ -139,10 +140,11 @@
             <p>Este espacio no habría sido posible sin el esfuerzo y la visión de las personas que fundaron el proyecto original. Ellos fueron los primeros en toda la comunidad hispanohablante en crear contenido especializado y estructurado para esta estación de trabajo:</p>
             
             <ul class="fundadores-list">
-                <li>José Manuel Fernández</li>
-                <li>Emmanuel Sánchez Garibay</li>
-                <li>Danilo Roa</li>
-                <li>Hugo Alberto Macías</li>
+                <li>José Manuel Fernández: España</li>
+                <li>Emmanuel Sánchez Garibay: México</li>
+                <li> Marcelo Sosa: Argentina</li>
+                <li>Danilo Roa: Colombia</li>
+                <li>Hugo Macías: México</li>
             </ul>
 
             <p>Gracias al trabajo pionero de este equipo, hoy en día el canal de REAPER Accesible Español Oficial se ha consolidado como una de las principales y más respetadas fuentes de conocimiento sobre el manejo de esta estación de trabajo.</p>
@@ -158,6 +160,9 @@
     <footer>
         <p>REAPER-Accesible-Español-Oficial copyright 2020 a 2026</p>
     </footer>
+
+    <!-- AQUÍ ESTÁ EL ENLACE AL ARCHIVO JAVASCRIPT -->
+    <script src="buscador.js"></script>
 
 </body>
 </html>

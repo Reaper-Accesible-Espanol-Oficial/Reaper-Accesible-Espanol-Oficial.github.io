@@ -114,7 +114,8 @@
         <h1>REAPER Accesible Español Oficial</h1>
 
         <div class="search-container" role="search">
-            <form action="#" method="get">
+            <!-- AQUÍ ESTÁ EL CAMBIO DEL FORMULARIO -->
+            <form onsubmit="ejecutarBuscador(event)">
                 <label for="buscador">Buscar en el sitio:</label>
                 <input type="search" id="buscador" name="q" placeholder="Buscar...">
                 <button type="submit">Buscar</button>
@@ -152,6 +153,9 @@
     <footer>
         <p>REAPER-Accesible-Español-Oficial copyright 2020 a 2026</p>
     </footer>
+
+    <!-- AQUÍ ESTÁ EL ENLACE AL ARCHIVO JAVASCRIPT -->
+    <script src="buscador.js"></script>
 
 </body>
 </html>

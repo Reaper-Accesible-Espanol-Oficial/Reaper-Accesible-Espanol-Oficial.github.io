@@ -10,6 +10,7 @@
         .skip-link:focus { top: 0; }
         header { text-align: center; padding: 20px; background-color: #f8f9fa; }
         header img { display: block; margin: 0 auto 15px auto; }
+        .search-container { margin: 15px 0; } /* Estilo agregado para el buscador */
         nav { text-align: center; background-color: #333; padding: 10px; }
         nav ul { list-style-type: none; padding: 0; margin: 0; }
         nav ul li { display: inline; margin: 0 10px; }
@@ -27,6 +28,14 @@
     <header>
         <img src="imagenes/Imagen-Reaper-Accesible-Espanol-Oficial.png" alt="Logotipo de REAPER Accesible Español Oficial" width="200" height="auto">
         <h1>REAPER Accesible Español Oficial</h1>
+
+        <div class="search-container" role="search">
+            <form onsubmit="ejecutarBuscador(event)">
+                <label for="buscador">Buscar en el sitio:</label>
+                <input type="search" id="buscador" name="q" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
     </header>
 
     <nav aria-label="Navegación principal">
@@ -36,7 +45,7 @@
             <li><a href="instructores.html">Nuestros instructores</a></li>
             <li><a href="redes.html">Redes sociales</a></li>
             <li><a href="herramientas.html">Herramientas accesibles</a></li>
-            <li><a href="descargas.html">Descarga de REAPER y sus complementos</a></li>
+            <li><a href="descargas.html">Descarga de REAPER y sus complementos de accesibilidad</a></li>
             <li><a href="nosotros.html">Acerca de nosotros</a></li>
             <li><a href="contacto.html" aria-current="page">Contacto</a></li>
         </ul>
@@ -57,6 +66,9 @@
     <footer>
         <p>REAPER-Accesible-Español-Oficial copyright 2020 a 2026</p>
     </footer>
+
+    <!-- Script del buscador conectado aquí -->
+    <script src="buscador.js"></script>
 
 </body>
 </html>
