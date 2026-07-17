@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descarga de REAPER y sus complementos de accesibilidad  - REAPER Accesible Español Oficial</title>
+    <title>Nuestros Instructores - REAPER Accesible Español Oficial</title>
     <style>
         /* Estilos básicos para la estructura visual acordada */
         body {
@@ -76,7 +76,7 @@
             padding: 0 20px;
         }
 
-        /* Estilos para las tarjetas de descarga */
+        /* Estilos para las tarjetas de los instructores */
         article {
             background-color: #f4f4f4;
             padding: 20px;
@@ -88,10 +88,11 @@
             margin-top: 0;
             margin-bottom: 10px;
             color: #0056b3;
+            font-size: 1.4em;
         }
         
-        /* Estilo para los botones de descarga */
-        .btn-descarga {
+        /* Estilo para los botones de los perfiles */
+        .btn-perfil {
             display: inline-block;
             background-color: #0056b3;
             color: white;
@@ -101,7 +102,7 @@
             border-radius: 5px;
             margin-top: 15px;
         }
-        .btn-descarga:hover {
+        .btn-perfil:hover {
             background-color: #004494;
             text-decoration: none;
         }
@@ -126,7 +127,7 @@
         <h1>REAPER Accesible Español Oficial</h1>
 
         <div class="search-container" role="search">
-            <!-- AQUÍ ESTÁ EL CAMBIO DEL FORMULARIO -->
+            <!-- Formulario conectado al buscador en JavaScript -->
             <form onsubmit="ejecutarBuscador(event)">
                 <label for="buscador">Buscar en el sitio:</label>
                 <input type="search" id="buscador" name="q" placeholder="Buscar...">
@@ -139,10 +140,10 @@
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="cursos.html">Cursos</a></li>
-            <li><a href="instructores.html">Nuestros instructores</a></li>
+            <li><a href="instructores.html" aria-current="page">Nuestros instructores</a></li>
             <li><a href="redes.html">Redes sociales</a></li>
             <li><a href="herramientas.html">Herramientas accesibles</a></li>
-            <li><a href="descargas.html" aria-current="page">Descarga de REAPER y sus complementos de accesibilidad</a></li>
+            <li><a href="descargas.html">Descarga de REAPER y sus complementos de accesibilidad</a></li>
             <li><a href="nosotros.html">Acerca de nosotros</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
@@ -151,37 +152,19 @@
     <main id="contenido-principal">
 
         <section>
-            <h2>Descargas Oficiales</h2>
-            <p>Aquí encontrarás los enlaces directos a las páginas oficiales para descargar REAPER y todos los complementos necesarios.</p>
+            <h2>Equipo de trabajo</h2>
+            <p>Te presentamos al equipo de instructores de REAPER Accesible Español Oficial. Detrás de cada curso, tutorial y material de apoyo, hay profesionales apasionados por el audio, la enseñanza y la accesibilidad. Selecciona el perfil y da click para conocer más acerca de su trayectoria y sus especialidades.</p>
             
             <article>
-                <h3>REAPER</h3>
-                <p>La estación de trabajo de audio digital (DAW) Rápido, eficiente y altamente personalizable.</p>
-                <a href="https://www.reaper.fm/download.php" class="btn-descarga" target="_blank" aria-label="Descargar REAPER">Descargar REAPER</a>
+                <h3>Hugo Alberto Macías Muñoz</h3>
+                <p>Visita su perfil a continuación y síguelo en sus redes sociales.</p>
+                <a href="www.google.com" class="btn-perfil" aria-label="Ver el perfil de Hugo">Ver perfil</a>
             </article>
 
             <article>
-                <h3>OSARA</h3>
-                <p>Open Source Accessibility for the REAPER Application. Es la extensión fundamental que comunica a REAPER con lectores de pantalla como NVDA, JAWS y VoiceOver.</p>
-                <a href="https://osara.reaperaccessibility.com/snapshots/" class="btn-descarga" target="_blank" aria-label="Descargar OSARA">Descargar OSARA</a>
-            </article>
-
-            <article>
-                <h3>SWS Extension</h3>
-                <p>Una extensión indispensable que añade cientos de acciones y funcionalidades nuevas a REAPER, muchas de ellas vitales para los atajos de teclado de accesibilidad.</p>
-                <a href="https://sws-extension.org/whatsnew.php" class="btn-descarga" target="_blank" aria-label="Descargar SWS">Descargar SWS</a>
-            </article>
-
-            <article>
-                <h3>ReaPack</h3>
-                <p>El gestor de paquetes de REAPER. Te permite instalar y actualizar automáticamente miles de scripts y herramientas creadas por la comunidad.</p>
-                <a href="https://reapack.com/" class="btn-descarga" target="_blank" aria-label="Descargar ReaPack">Descargar ReaPack</a>
-            </article>
-
-            <article>
-                <h3>Traducción al español (Javier Robledo)</h3>
-                <p>La traducción para tener EL PROGRAMA en español.</p>
-                <a href="https://www.reaperespa.com/descargar-reaper-en-espanol/" class="btn-descarga" target="_blank" aria-label="Descargar Traducción al Español">Descargar Traducción al Español</a>
+                <h3>Ángel Humberto Moreira Cevallos</h3>
+                <p>Visita su perfil a continuación y síguelo en sus redes sociales.</p>
+                <a href="www.google.com" class="btn-perfil" aria-label="Ver el perfil de Ángel">Ver perfil</a>
             </article>
 
         </section>
@@ -192,7 +175,7 @@
         <p>REAPER-Accesible-Español-Oficial copyright 2020 a 2026</p>
     </footer>
 
-    <!-- AQUÍ ESTÁ EL ENLACE AL ARCHIVO JAVASCRIPT -->
+    <!-- Script del buscador conectado aquí -->
     <script src="buscador.js"></script>
 
 </body>
